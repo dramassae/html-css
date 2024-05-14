@@ -6,16 +6,24 @@
     <title>Adaptação do fundo</title>
     <style>
         body{
-            height: 97vh;
+           /* height: 96vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size:contain ;/*caso não queira exibir o fundo mas prefira perder a foto parcialmente, escolher cover*/
+            background-size:cover ;
+            background-attachment: fixed;*/
+            /*caso queira exibir o fundo mas prefira não perder a foto parcialmente, escolher contain*/
+            
+            /* Shorthand- background: 
+            color → image → position → reperat → [size] → attachment*/
+            background: black url('imagens/wallpaper002.jpg') center top no-repeat fixed;
+            background-size: cover;
+            
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;/*expreme o conteudo sem quebrar o site*/
             padding: 10px ;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +37,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perspiciatis, excepturi beatae laudantium aliquid autem eaque illum omnis deserunt nesciunt saepe commodi? Repellat, natus? Provident earum maiores corrupti necessitatibus enim!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, perspiciatis, excepturi beatae laudantium aliquid autem eaque illum omnis deserunt nesciunt saepe commodi? Repellat, natus? Provident earum maiores corrupti necessitatibus enim! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem provident a vitae corporis et suscipit alias maiores vero veniam, ea quos? Sequi animi harum eos tempore vel labore? Repellendus, repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia modi obcaecati nostrum voluptatem eius quas, inventore voluptatum exercitationem rerum facilis ratione magnam deleniti explicabo alias facere, esse a dolorum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, saepe et obcaecati earum id nihil explicabo delectus numquam corporis qui, dignissimos voluptatem, dicta sapiente vel iste vitae. Optio, consectetur harum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam inventore officiis rem omnis commodi nihil nesciunt nobis recusandae aliquam voluptatem dolorum facere, dolorem odio repellendus hic. Dolore labore corporis libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsam, deserunt, labore consequatur est, minus esse molestias itaque quibusdam nobis ad impedit. Nesciunt eveniet maiores adipisci voluptatibus similique unde laudantium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam beatae nihil, quisquam modi corrupti harum magnam! Provident, suscipit sapiente architecto eos officia tempora, maxime distinctio voluptatibus vitae fugiat excepturi placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam earum incidunt cum possimus necessitatibus fugiat iste quis ullam recusandae? Laudantium fugiat corporis alias rerum sit quisquam ducimus voluptates rem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam consectetur ipsam sed tempora assumenda, dicta, sequi velit commodi provident quidem nam eaque! Cum a recusandae deserunt expedita suscipit! Dolore, voluptatem.
+        </p>
     </main>
     
 </body>
